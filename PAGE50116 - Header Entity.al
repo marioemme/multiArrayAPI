@@ -33,4 +33,10 @@ page 50116 "Header Entity"
             }
         }
     }
+    procedure ImportJson()
+    var
+        myInt: Integer;
+    begin
+
+    end;
 }
