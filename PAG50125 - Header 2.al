@@ -61,10 +61,18 @@ page 50125 SalesInvoiceCopy
     end;
 
     [ServiceEnabled]
-    procedure Example(var actionContext: WebServiceActionContext)
+    procedure Example(var actionContext: WebServiceActionContext; inParam: text) outParam: text
     var
         myInt: Integer;
     begin
-        Error('qui');
+        outParam := inParam + ' Completed'
+    end;
+
+    [ServiceEnabled]
+    procedure Example2(inParam: Text) outParam: Text
+    var
+        myInt: Integer;
+    begin
+        outParam := inParam + ' Completed'
     end;
 }
