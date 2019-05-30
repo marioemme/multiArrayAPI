@@ -33,10 +33,20 @@ page 50116 "Header Entity"
             }
         }
     }
-    procedure ImportJson()
-    var
-        myInt: Integer;
-    begin
 
+    [ServiceEnabled]
+    [Scope('Personalization')]
+    procedure Post(var ActionContext: WebServiceActionContext)
+    begin
+        //
+        Error('qui');
+    end;
+
+    [ServiceEnabled]
+    [Scope('Personalization')]
+    procedure Post2(var ActionContext: JsonArray)
+    begin
+        //
+        Error('qui');
     end;
 }
